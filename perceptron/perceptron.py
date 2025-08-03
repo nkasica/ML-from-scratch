@@ -15,6 +15,5 @@ class Perceptron:
                     self.weights += y * x
                     self.bias += y 
 
-
-    def test(self, xhat: np.ndarray):
+    def predict(self, xhat: np.ndarray):
         return np.sign(xhat @ self.weights + self.bias)
